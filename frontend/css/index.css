@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url("/public/anders-jilden-cYrMQA7a3Wc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+.container {
+  margin: 0px;
+  padding: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(47, 240, 40); */
+  background-image: linear-gradient(
+    305deg,
+    rgb(231, 12, 195),
+    rgb(216, 51, 51)
+  );
+  position: absolute;
+  top: 18%;
+  left: 34%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px;
+}
+.flexchild {
+  padding: 11px 36px;
+  margin: 2px 9px;
+}
+#login {
+  background-color: rgb(81, 81, 233);
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#signup {
+  background-color: rgb(81, 81, 233);
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#error {
+  outline: 2px;
+  background-color: #f3e7eb;
+  padding: 0px 48px;
+  border-radius: 2px;
+}
+label {
+  color: black;
+  font-size: 17px;
+}
+
+input[type="text"] {
+  padding: 4px;
+  width: 239px;
+  border-radius: 5px;
+}
+a {
+  color: blue;
+}
+
+.lastchild p {
+  margin: 6px 2px;
+}
+#submit {
+  background-color: rgb(81, 81, 233);
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.head {
+  padding: 4px;
+  text-align: center;
+  background-image: linear-gradient(
+    305deg,
+    rgb(231, 12, 195),
+    rgb(216, 51, 51)
+  );
+}
+
+.head > h2 {
+  margin: 10px;
+}

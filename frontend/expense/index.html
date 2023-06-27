@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanse Tracker</title>
+    <link rel="stylesheet" href="./../css/expense.css" />
+  </head>
+
+  <body>
+    <div class="head">
+      <h2>Expense Tracker App</h2>
+    </div>
+    <div class="side4">
+      <div class="side3">
+        <div class="container">
+          <form onsubmit="showHandler(event)" class="form">
+            <div class="flexchild">
+              <h1 style="margin: 0px">Add Expense</h1>
+            </div>
+            <div id="error"></div>
+            <div>
+              <label for="expense">Expense:-</label>
+              <input
+                type="text"
+                id="expense"
+                name="expense"
+                style="margin-left: 20px"
+              />
+            </div>
+            <div>
+              <label for="description">Description:-</label>
+              <input type="text" id="description" name="description" />
+            </div>
+            <div>
+              <label for="category">category:-</label>
+              <select name="category" id="category">
+                <option value="food">food</option>
+                <option value="fuel">fuel</option>
+                <option value="salary">salary</option>
+                <option value="grocery">grocery</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" id="submit">submit</button>
+            </div>
+          </form>
+          <div class="premium">
+            <p>Click here to get premium membership ?</p>
+            <button id="rzp-button1">buy premium</button>
+          </div>
+        </div>
+        <div class="details">
+          <div class="side1">
+            <div id="lead">
+              <button id="leader-btn">show leaderboard</button>
+              <button id="download">Download file</button>
+            </div>
+            <h2>Expense Details</h2>
+          </div>
+          <div>
+            <label for="pages">Choose a row per page:</label>
+            <select name="pages" id="pages">
+              <option value="2">2</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+            </select>
+          </div>
+          <div>
+            <ul id="list"></ul>
+          </div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+      <div class="side2">
+        <div id="leaderboard">
+          <h2>LeaderBoard</h2>
+        </div>
+        <div>
+          <ul id="listboard"></ul>
+        </div>
+        <div class="downloadFlies">
+          <ul id="file-items"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./index.js"></script>
+</html>

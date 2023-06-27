@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanse Tracker</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h2>Expense Tracker App</h2>
+    </div>
+    <div class="container">
+      <form onsubmit="showHandler(event)" class="form">
+        <h1>LogIn</h1>
+        <p id="error"></p>
+        <div class="flexchild">
+          <label for="email">Email:-</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="flexchild">
+          <label for="password">password:-</label>
+          <input type="text" id="password" name="password" required />
+        </div>
+        <div class="flexchild">
+          <button type="submit" id="login">LogIn</button>
+        </div>
+        <div class="lastchild">
+          <p>
+            forget your login details?
+            <a href="http://localhost:3000/Forgotpassword/forgetpassword.html"
+              >Get help in logging in?</a
+            >
+          </p>
+        </div>
+        <div class="lastchild">
+          <p>
+            New User ?
+            <a href="http://localhost:3000/Signup/signup.html">SignUp</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="login.js"></script>
+</html>
